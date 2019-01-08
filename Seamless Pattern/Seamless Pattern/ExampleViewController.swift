@@ -24,6 +24,7 @@ class ExampleViewController: UIViewController {
             lines.append(Line.init(start: CGPoint(x:CGFloat(array[0]), y:CGFloat(array[1])), end: CGPoint(x:CGFloat(array[2]),y:CGFloat(array[3]))))
         }
         
+        exampleView.setLineCap(CGLineCap.round)
         exampleView.setLines(lines)
         exampleView.setNeedsDisplay()
         

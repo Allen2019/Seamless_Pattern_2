@@ -40,6 +40,10 @@ class DrawView: UIView {
     func setLineWidth(_ width: CGFloat){
         lineWidth = width
     }
+    func setLineCap(_ lineCap: CGLineCap)
+    {
+        self.lineCap = lineCap
+    }
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
